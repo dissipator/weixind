@@ -1,0 +1,4 @@
+replace.sh
+*.pyc
+weixind.py.bak
+logInfo

@@ -1,0 +1,18 @@
+$def with (current,pos,length)
+<div class="name">
+$if current:
+    $current
+$else:
+    Not playing
+</div>
+<div class="time">
+$if pos:
+    $pos 
+$else:
+    '00:00:00'  
+/ 
+$if length:
+    $length 
+$else:
+    '00:00:00.00'
+ </div>

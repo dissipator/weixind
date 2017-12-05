@@ -1,0 +1,16 @@
+$def with (dir_list,file_list,dr)
+<div class="folders">
+$for i in range(len(file_list)) :
+    $if file_list[i][0].split('.')[-1] in ['mp3','Mp3','MP3']:
+        <div class="file audio" id="audio_$i"  onclick="return play('$dr/$file_list[i][0]')">$i--$file_list[i][1]<input type="hidden" name="file_location" id="$dr/$file_list[i][0]" value="$dr/$file_list[i][0]"/></div>
+
+    $elif file_list[i][0].split('.')[-1] in ['mp4','mkv','MP4','Mp4','MKV','Mkv']:
+        <div class="file video" id="video_$i"  onclick="return play('$dr/$file_list[i][0]')">$i--$file_list[i][1]<input type="hidden" name="file_location" id="$dr/$file_list[i][0]" value="$dr/$file_list[i][0]"/></div>
+    $#else:
+       $# <div class="file not_video" id="video_$i" >$file_list[i][1]</div>
+        
+$for d in dir_list:
+    $if not d[0].startswith('.'):
+        <div class="folder"><div class="folder_name collapsed" onclick="return get_folder('$dr/$d[0]',this)">$d[1]</div></div>
+</div>
+

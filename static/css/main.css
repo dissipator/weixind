@@ -1,0 +1,103 @@
+.file_info {
+float:right;
+}
+.not_video {
+color:gray;
+font-style:italic;
+}
+.video {
+}
+.player {
+text-align:center;
+width: 600px;
+height: 100px;
+}
+.folders {
+margin-left:25px;
+background-image: url('/static/img/dot.png');
+background-size: 2px;
+background-repeat: repeat-y;
+padding-left: 10;
+}
+.name {
+font-weight:bold;
+height:25px;
+overflow:visible;
+}
+.display {
+background-image: url('/static/img/rpi_logo.png');
+background-repeat: no-repeat;
+}
+.time {
+font-weight:bold;
+height:25px;
+}
+.controls {
+height:50px;
+}
+.quit {
+background-image: url('/static/img/player-icons.jpg');
+background-position: -322px -90px;
+height: 50px;
+width: 60px;
+float:left;
+}
+.quit:hover {
+background-position: -125px -90px;
+}
+.back {
+float:left;
+background-image: url('/static/img/player-icons.jpg');
+background-position: -192px -90px;
+height: 50px;
+width: 60px;
+}
+.back:hover {
+background-position: -0px -90px;
+}
+.pause {
+float:left;
+background-image: url('/static/img/player-icons.jpg');
+background-position: -192px -23px;
+height: 50px;
+width: 60px;
+}
+.pause:hover {
+background-position: -0px -20px;
+}
+.forward {
+float:left;
+background-image: url('/static/img/player-icons.jpg');
+background-position: -258px -90px;
+height: 50px;
+width: 60px;
+}
+.forward:hover {
+background-position: -66px -90px;
+}
+.folder:hover {
+cursor:pointer;
+}
+.folder .folder_name {
+padding-left:30px;
+}
+.file:hover {
+cursor:pointer;
+}
+.expanded {
+background-image:url('/static/img/collapse.png');
+background-repeat: no-repeat;
+background-size: 20px;
+}
+.collapsed {
+background-image:url('/static/img/expand.png');
+background-repeat: no-repeat;
+background-size: 20px;
+}
+.error {
+color:red;
+font-weight:bold;
+}
+.footer {
+text-align:right;
+}
